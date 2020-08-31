@@ -2,11 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-import { combineReducers } from 'redux'
+import * as React from 'react'
 
-// Utils
-import tipReducer from './tip_reducer'
+import { Host } from './interfaces'
 
-export default combineReducers<RewardsTip.ApplicationState>({
-  rewardsDonateData: tipReducer
-})
+export const HostContext = React.createContext<Host>({} as Host)
