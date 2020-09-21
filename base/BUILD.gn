@@ -8,3 +8,14 @@ source_set("base") {
 
   deps = [ "//base" ]
 }
+
+source_set("base_unittests") {
+  testonly = true
+  sources = [ "//base/tools_sanity_unittest.cc" ]
+  deps = [
+    "//base:base",
+    "//base/third_party/dynamic_annotations:dynamic_annotations",
+    "//testing/gtest:gtest",
+  ]
+}
+

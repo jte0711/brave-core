@@ -135,6 +135,7 @@ test("brave_unit_tests") {
 
   deps = [
     ":other_unit_tests",
+    "//brave/base:base_unittests",
     "//brave/browser/safebrowsing",
     "//brave/components/brave_private_cdn",
     "//brave/components/brave_referrals/common",
